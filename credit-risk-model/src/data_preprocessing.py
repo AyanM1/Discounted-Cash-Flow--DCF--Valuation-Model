@@ -12,6 +12,6 @@ def clean_data(df):
 
 def engineer_features(df):
     # Example feature engineering
-    df['debt_to_income'] = df['amount'] / df['annual_income']
+    df['debt_to_income'] = df['loan_amount'] / df['annual_income']
     # ...more features...
     return df
